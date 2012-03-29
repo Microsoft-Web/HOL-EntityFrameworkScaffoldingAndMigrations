@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+  <Id>ASPNETMVC4andEntityFrameworkMigrations</Id>
+  <Author>
+    <Name>.</Name>
+  </Author>
+  <Description>In this lab, you will learn how to use MVC4 Scaffolding to create CRUD operations, and then, you will learn how to update the model and apply the changes in the database by using Entity Framework Migrations</Description>  
+  <Document ConversionType="Html">.\HOL.md</Document>
+  <Title>ASP.NET MVC 4 and Entity Framework Migrations</Title>
+  <Version>1.0.0</Version>
+  <Source>Source</Source>
+  <CustomProperties>
+	<Property Name="GithHubRepository" Value="https://github.com/Microsoft-Web/HOL-MVC4andEFMigrations/" />
+  </CustomProperties>   
+</Lab>

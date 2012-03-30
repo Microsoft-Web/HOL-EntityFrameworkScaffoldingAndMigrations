@@ -1,5 +1,5 @@
 ﻿<a name="HOLTop" />
-# HOL: MVC4 and Entity Framework Migrations#
+# ASP.NET MVC 4 Entity Framework Scaffolding and Migrations #
 
 ---
 
@@ -81,21 +81,21 @@ Please follow these steps to downloads and install Microsoft Visual Studio 11 Ex
 ## Exercises ##
 The following exercises make up this Hands-On Lab:
 
-1. [Using MVC4 Scaffolding with Entity Framework Migrations](#Exercise1)
+1. [Using MVC 4 Scaffolding with Entity Framework Migrations](#Exercise1)
 
 
 Estimated time to complete this lab: **30 minutes**
 
 <a name="Exercise1" />
-### Exercise 1: Using MVC4 Scaffolding with Entity Framework Migrations###
+### Exercise 1: Using MVC 4 Scaffolding with Entity Framework Migrations###
 
 ASP.NET MVC scaffolding provides a quick way to generate the CRUD operations in a standardized way, creating the necessary logic that lets your application interact with the database layer.
 
-In this exercise, you will learn how to use MVC4 scaffolding with code first to create the CRUD methods. 
+In this exercise, you will learn how to use MVC 4 scaffolding with code first to create the CRUD methods. 
 Then, you will learn how to update your model applying the changes in the database by using Entity Framework Migrations.
 
 <a name="Ex01Task1" />
-####Task 1- Creating a new MVC4 project using Scaffolding####
+####Task 1- Creating a new MVC 4 project using Scaffolding####
 
 1. Start Microsoft Visual Studio 11 from **Start** | **All Programs** | **Microsoft Visual Studio 11 Express** | **Visual Studio 11 Express Beta for Web**.
 
@@ -195,7 +195,7 @@ At this point, the database is not yet created. In this task, you will run the a
 
  
 >
->**Note:** If you have the **SQLEXPRESS** service running, open **Web.config**, locate in the end of the file and make sure you have the following connection string in the EntityFramework section:
+>**Note:** If you have the **SQLEXPRESS** service running, open **Web.config** and make sure you have the following connection string in the EntityFramework section at the end of the file:
 >
 ><!-- mark:3 -->
 >````XML
@@ -209,7 +209,7 @@ At this point, the database is not yet created. In this task, you will run the a
 
 1. Press **F5** to run the application.
 
-1. In the browser, add **/person** to the URL to open the Person page. 
+1. In the browser, add **/Person** to the URL to open the Person page. 
 
 	![Application first run](images/application-first-run.png?raw=true "Application first run")
 
@@ -241,7 +241,7 @@ At this point, the database is not yet created. In this task, you will run the a
 Notice that you have created the whole CRUD for the person entity throughout your application- from the model to the views - without having to write a single line of code!.
 
 <a name="Ex01Task3" />
-####Task 3- Updating the database using Entity Framework Migration#
+####Task 3- Updating the database using Entity Framework Migrations#
 
 In this task you will update the database using EF Migrations. You will discover how easy it is to change the model and reflect the changes in your databases by using the Entity Framework Migrations feature.
 
@@ -256,14 +256,14 @@ In this task you will update the database using EF Migrations. You will discover
 
 	_Enabling migrations_
 
-	The Enable-Migration command creates the **Migration** folder, which contains a script to initialize the database.
+	The Enable-Migration command creates the **Migrations** folder, which contains a script to initialize the database.
 
 	![Migrations folder](images/migrations-folder.png?raw=true "Migrations folder")
 
 	_Migrations folder_
 	
 
-1. Open the **Configuration.cs** file in the Migrations folders. Locate the class constructor and change the **AutomaticMigrationsEnabled* value to _true_.
+1. Open the **Configuration.cs** file in the Migrations folder. Locate the class constructor and change the **AutomaticMigrationsEnabled* value to _true_.
 
 	<!-- mark:3 -->
 	````C#
@@ -302,14 +302,14 @@ In this task you will update the database using EF Migrations. You will discover
 	Add-Migration AddMiddleName
 	````
 	
-	This command will look at the data objects to figure out what it has changed, and then update the commands that modify the database accordingly.
+	This command will look at the data objects to figure out what has changed, and then add the commands that will modify the database accordingly.
 	
 	![Adding a middle name](images/PMC-adding-middle-name.png?raw=true "Adding a middle name")
 
 	_Adding a middle name_
 
 
-1. (Optional) You can execute the following command to generate a SQL script with the differential update. This will let you update a database located in another server (In this case it is not necessary):
+1. (Optional) You can execute the following command to generate a SQL script with the differential update. This will let you update the database manually (In this case it's not necessary):
 	
 	<!-- mark:1 -->
 	````PMC
@@ -370,4 +370,4 @@ In this task you will update the database using EF Migrations. You will discover
 <a name="Summary" />
 ## Summary ##
 
-In this Hands-On lab, you have learned simple steps to create CRUD operations with MVC4 Scaffolding for any model class. Then, you have learned how to perform an end-to-end update in your application -from the database to the views- by using Entity Framework Migrations.
+In this Hands-On lab, you have learned simple steps to create CRUD operations with MVC 4 Scaffolding for any model class. Then, you have learned how to perform an end-to-end update in your application -from the database to the views- by using Entity Framework Migrations.

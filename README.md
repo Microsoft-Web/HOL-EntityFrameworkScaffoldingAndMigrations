@@ -1,4 +1,4 @@
-# ASP.NET MVC 4 and Entity Framework Migrations #
+# ASP.NET MVC 4 Entity Framework Scaffolding and Migrations #
 
 ## Hands-on Lab ##
 

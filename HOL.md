@@ -31,9 +31,11 @@ You must have the following items to complete this lab:
 <a name="Setup" />
 ### Setup ###
 
+<a name="InstallingCodeSnippets" />
 #### Installing Code Snippets####
 For convenience, much of the code you will be managing along this lab is available as Visual Studio code snippets. To install the code snippets run the **.\Source\Assets\CodeSnippets.vsi** file.
 
+<a name="InstallingWebPI" />
 ####Installing Web Platform Installer####
 This section assumes that you don't have some or all the system requirements installed. In case you do, you can simply skip this section.
 
@@ -94,7 +96,7 @@ ASP.NET MVC scaffolding provides a quick way to generate the CRUD operations in 
 In this exercise, you will learn how to use MVC 4 scaffolding with code first to create the CRUD methods. 
 Then, you will learn how to update your model applying the changes in the database by using Entity Framework Migrations.
 
-<a name="Ex01Task1" />
+<a name="Ex1Task1" />
 ####Task 1- Creating a new MVC 4 project using Scaffolding####
 
 1. Start Microsoft Visual Studio 11 from **Start** | **All Programs** | **Microsoft Visual Studio 11 Express** | **Visual Studio 11 Express Beta for Web**.
@@ -127,6 +129,7 @@ Then, you will learn how to update your model applying the changes in the databa
 1. Open the Person class and insert the following three attributes.
 
 	(Code Snippet - _ASP.NET MVC4 and Entity Framework Migrations - Ex01 - Class Person_)
+	
 	<!-- mark:10-14 -->
 	````C#
 	using System;
@@ -177,7 +180,7 @@ Then, you will learn how to update your model applying the changes in the databa
 
 	_Inside the Person controller_
 
-
+<a name="Ex1Task2" />
 ####Task 2- Running the application ###
 	
 At this point, the database is not yet created. In this task, you will run the application for the first time and test the CRUD operations. The database will be created on the fly with Code First.
@@ -240,7 +243,7 @@ At this point, the database is not yet created. In this task, you will run the a
 1. Close the browser and return to Visual Studio.
 Notice that you have created the whole CRUD for the person entity throughout your application- from the model to the views - without having to write a single line of code!.
 
-<a name="Ex01Task3" />
+<a name="Ex1Task3" />
 ####Task 3- Updating the database using Entity Framework Migrations#
 
 In this task you will update the database using EF Migrations. You will discover how easy it is to change the model and reflect the changes in your databases by using the Entity Framework Migrations feature.
@@ -350,7 +353,7 @@ In this task you will update the database using EF Migrations. You will discover
 	_Updating the controller_
 
 
-<a name="Ex01Task4" />
+<a name="Ex1Task4" />
 #### Task4- Running the application ####
 
 1. Press **F5** to run the application.

@@ -10,6 +10,6 @@
   <Version>1.0.0</Version>
   <Source>Source</Source>
   <CustomProperties>
-	<Property Name="GithHubRepository" Value="https://github.com/Microsoft-Web/HOL-MVC4andEFMigrations/" />
+	<Property Name="GithHubRepository" Value="https://github.com/Microsoft-Web/HOL-EntityFrameworkScaffoldingAndMigrations" />
   </CustomProperties>   
 </Lab>

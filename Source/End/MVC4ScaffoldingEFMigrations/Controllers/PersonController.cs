@@ -5,13 +5,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MVC4andEFMigrations.Models;
+using MVC4ScaffoldingEFMigrations.Models;
 
-namespace MVC4andEFMigrations.Controllers
+namespace MVC4ScaffoldingEFMigrations.Controllers
 {
     public class PersonController : Controller
     {
-        private MVC4andEFMigrationsContext db = new MVC4andEFMigrationsContext();
+        private MVC4ScaffoldingEFMigrationsContext db = new MVC4ScaffoldingEFMigrationsContext();
 
         //
         // GET: /Person/

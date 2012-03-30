@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MVC4andEFMigrations.Controllers
+namespace MVC4ScaffoldingEFMigrations.Controllers
 {
     public class HomeController : Controller
     {

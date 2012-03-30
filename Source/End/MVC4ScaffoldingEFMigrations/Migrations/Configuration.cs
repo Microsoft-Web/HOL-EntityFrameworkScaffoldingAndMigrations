@@ -1,18 +1,18 @@
-namespace MVC4andEFMigrations.Migrations
+namespace MVC4ScaffoldingEFMigrations.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<MVC4andEFMigrations.Models.MVC4andEFMigrationsContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<MVC4ScaffoldingEFMigrations.Models.MVC4ScaffoldingEFMigrationsContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(MVC4andEFMigrations.Models.MVC4andEFMigrationsContext context)
+        protected override void Seed(MVC4ScaffoldingEFMigrations.Models.MVC4ScaffoldingEFMigrationsContext context)
         {
             //  This method will be called after migrating to the latest version.
 

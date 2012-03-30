@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Web.Security;
 
-namespace MVC4andEFMigrations.Models
+namespace MVC4ScaffoldingEFMigrations.Models
 {
 
     public class ChangePasswordModel

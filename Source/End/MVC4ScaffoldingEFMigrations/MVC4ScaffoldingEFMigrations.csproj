@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{28AF0070-0854-4B6B-BB1A-7817399B496E}</ProjectGuid>
+    <ProjectGuid>{579C6977-FC72-4F01-8563-AF81CA60DB90}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVC4andEFMigrations</RootNamespace>
-    <AssemblyName>MVC4andEFMigrations</AssemblyName>
+    <RootNamespace>MVC4ScaffoldingEFMigrations</RootNamespace>
+    <AssemblyName>MVC4ScaffoldingEFMigrations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <FileUpgradeFlags>
@@ -137,17 +137,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201203291520578_InitialCreate.cs" />
-    <Compile Include="Migrations\201203291520578_InitialCreate.Designer.cs">
-      <DependentUpon>201203291520578_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201203301739135_InitialCreate.cs" />
+    <Compile Include="Migrations\201203301739135_InitialCreate.Designer.cs">
+      <DependentUpon>201203301739135_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201203291619199_AddMiddleName.cs" />
-    <Compile Include="Migrations\201203291619199_AddMiddleName.Designer.cs">
-      <DependentUpon>201203291619199_AddMiddleName.cs</DependentUpon>
+    <Compile Include="Migrations\201203301747108_AddMiddleName.cs" />
+    <Compile Include="Migrations\201203301747108_AddMiddleName.Designer.cs">
+      <DependentUpon>201203301747108_AddMiddleName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\MVC4andEFMigrationsContext.cs" />
+    <Compile Include="Models\MVC4ScaffoldingEFMigrationsContext.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -276,7 +276,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:26821/</IISUrl>
+          <IISUrl>http://localhost:38589/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

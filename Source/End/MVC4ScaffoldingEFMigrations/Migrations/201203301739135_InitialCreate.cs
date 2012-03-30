@@ -1,4 +1,4 @@
-namespace MVC4andEFMigrations.Migrations
+namespace MVC4ScaffoldingEFMigrations.Migrations
 {
     using System.Data.Entity.Migrations;
     

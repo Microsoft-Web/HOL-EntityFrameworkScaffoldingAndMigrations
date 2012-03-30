@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using MVC4andEFMigrations.Models;
+using MVC4ScaffoldingEFMigrations.Models;
 
-namespace MVC4andEFMigrations.Controllers
+namespace MVC4ScaffoldingEFMigrations.Controllers
 {
 
     [Authorize]

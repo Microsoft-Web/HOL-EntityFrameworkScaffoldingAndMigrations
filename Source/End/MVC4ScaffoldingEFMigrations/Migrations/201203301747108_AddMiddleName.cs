@@ -1,8 +1,8 @@
-namespace MVC4andEFMigrations.Migrations
+namespace MVC4ScaffoldingEFMigrations.Migrations
 {
     using System.Data.Entity.Migrations;
     
-    public partial class AddMiddleName1 : DbMigration
+    public partial class AddMiddleName : DbMigration
     {
         public override void Up()
         {

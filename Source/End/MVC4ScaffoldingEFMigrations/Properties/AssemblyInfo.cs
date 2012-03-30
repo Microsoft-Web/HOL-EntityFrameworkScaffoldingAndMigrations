@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MVC4andEFMigrations")]
+[assembly: AssemblyTitle("MVC4ScaffoldingEFMigrations")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MVC4andEFMigrations")]
+[assembly: AssemblyProduct("MVC4ScaffoldingEFMigrations")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("26fddd7b-8324-4eda-807b-2032b456bf36")]
+[assembly: Guid("841ae5e7-c3ad-4d56-b0c6-562ce45be295")]
 
 // Version information for an assembly consists of the following four values:
 //

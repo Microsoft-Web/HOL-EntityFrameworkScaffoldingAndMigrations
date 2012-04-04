@@ -128,7 +128,7 @@ Then, you will learn how to update your model applying the changes in the databa
 
 1. Open the Person class and insert the following three attributes.
 
-	(Code Snippet - _ASP.NET MVC4 and Entity Framework Migrations - Ex01 - Class Person_)
+	(Code Snippet - _ASP.NET MVC4 and Entity Framework Migrations - Ex01 Class Person_)
 	
 	<!-- mark:10-14 -->
 	````C#

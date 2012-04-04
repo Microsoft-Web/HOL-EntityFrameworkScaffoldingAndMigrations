@@ -159,10 +159,10 @@ Then, you will learn how to update your model applying the changes in the databa
 1. In the Solution Explorer, right-click the controllers folder and select **Add | Controller**. 
 
 1. Name the controller _PersonController_ and complete the **Scaffolding options** with the following values.	
-	- In the **template** drop-down list, select the "Controllers with read/write actions using Entity Framework" option.
+	- In the **Template** drop-down list, select the "Controller with read/write actions and views, using Entity Framework" option.
 	- In the **Model class** drop-down list, select the **Person** class.
-	- In the **Data Context class** list, select **New Data Context**. Choose any name and click **OK**.
-	- In the **Views** drop-down list, select **Razor**.
+	- In the **Data Context class** list, select **\<New data context...\>**. Choose any name and click **OK**.
+	- In the **Views** drop-down list, make sure that **Razor** is selected.
 
 	![Adding the Person controller with scaffolding](images/add-person-controller.png?raw=true "Adding the Person controller with scaffolding")
 
@@ -185,7 +185,7 @@ Then, you will learn how to update your model applying the changes in the databa
 	
 At this point, the database is not yet created. In this task, you will run the application for the first time and test the CRUD operations. The database will be created on the fly with Code First.
 	
->**Note:** Before running the application, open web.config and fix the database connection string (This issue is part of the MVC4 Beta Release Notes).
+>**Note:** Before running the application, open global.asax and fix the database connection string (This issue is part of the MVC4 Beta Release Notes).
 >
 > 1. Open **global.asax** and add another slash (**\\**) to the connection string Data source:
 >
@@ -227,7 +227,7 @@ At this point, the database is not yet created. In this task, you will run the a
 
 		_Adding a new person_
 
-	1. Click **details** to open the person's details. Then, click **Back to list**.
+	1. Click **Details** to open the person's details. Then, click **Back to List**.
 
 		![Person's details](images/person-details.png?raw=true "Person's details")
 
@@ -246,7 +246,7 @@ Notice that you have created the whole CRUD for the person entity throughout you
 <a name="Ex1Task3" />
 ####Task 3- Updating the database using Entity Framework Migrations#
 
-In this task you will update the database using EF Migrations. You will discover how easy it is to change the model and reflect the changes in your databases by using the Entity Framework Migrations feature.
+In this task you will update the database using Entity Framework Migrations. You will discover how easy it is to change the model and reflect the changes in your databases by using the Entity Framework Migrations feature.
 
 1. In the Package Manager Console, enter the following command:
 	
@@ -266,7 +266,7 @@ In this task you will update the database using EF Migrations. You will discover
 	_Migrations folder_
 	
 
-1. Open the **Configuration.cs** file in the Migrations folder. Locate the class constructor and change the **AutomaticMigrationsEnabled* value to _true_.
+1. Open the **Configuration.cs** file in the Migrations folder. Locate the class constructor and change the **AutomaticMigrationsEnabled** value to _true_.
 
 	<!-- mark:3 -->
 	````C#
@@ -338,7 +338,7 @@ In this task you will update the database using EF Migrations. You will discover
 
 	_Updating the Database_
 
-	This will insert the **MiddleName** attribute you have added in the Person table.
+	This will add the **MiddleName** column in the **People** table to match the current definition of the **Person** class.
 	
 1. Once the database is updated, right-click the Controller folder and select **Add | Controller** to add the Person controller again (Complete with the same values). This will update the existing methods and views adding the new attribute.
 

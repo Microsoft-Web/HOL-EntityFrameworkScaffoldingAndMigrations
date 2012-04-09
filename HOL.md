@@ -6,9 +6,9 @@
 <a name="Overview" />
 ## Overview ##
 
-If you are familiar with MVC4 controller methods, or have completed the “Helpers, Forms and Validation “ Hands-On lab, you should be aware that many of the logic to create, update, list and remove any data entity it is repeated among the application. Not to mention that, if your model has several classes to manipulate, you will be likely to spend a considerable time writing the POST and GET action methods for each entity operation, as well as each of the views.
+If you are familiar with MVC4 controller methods, or have completed the "Helpers, Forms and Validation" Hands-On lab, you should be aware that many of the logic to create, update, list and remove any data entity it is repeated among the application. Not to mention that, if your model has several classes to manipulate, you will be likely to spend a considerable time writing the POST and GET action methods for each entity operation, as well as each of the views.
 
-In this lab you will learn how to use the ASP.NET MVC 4 scaffolding to generate the baseline of your application’s CRUD (Create, Read, Update and Delete) automatically. Starting from a simple model class, and, without writing a single line of code, you will create a controller containing all the CRUD operations, as well as the all the necessary views. After building and running the simple solution, you will have the application database generated, as well as the MVC logic and views for data manipulation.
+In this lab you will learn how to use the ASP.NET MVC 4 scaffolding to automatically generate the baseline of your application's CRUD (Create, Read, Update and Delete). Starting from a simple model class, and, without writing a single line of code, you will create a controller that will contain all the CRUD operations, as well as the all the necessary views. After building and running the simple solution, you will have the application database generated, together with the MVC logic and views for data manipulation.
 
 In addition, you will learn how easy it is to use Entity Framework Migrations to perform model updates throughout your entire application. Entity Framework Migrations will let you modify your database after the model has changed with simple steps. With all these in mind, you will be able to build and maintain web applications more efficiently, taking advantage of the latest features of MVC4.
 
@@ -159,7 +159,7 @@ Then, you will learn how to update your model applying the changes in the databa
 1. In the Solution Explorer, right-click the controllers folder and select **Add | Controller**. 
 
 1. Name the controller _PersonController_ and complete the **Scaffolding options** with the following values.	
-	- In the **Template** drop-down list, select the "Controller with read/write actions and views, using Entity Framework" option.
+	- In the **Template** drop-down list, select the **Controller with read/write actions and views, using Entity Framework** option.
 	- In the **Model class** drop-down list, select the **Person** class.
 	- In the **Data Context class** list, select **\<New data context...\>**. Choose any name and click **OK**.
 	- In the **Views** drop-down list, make sure that **Razor** is selected.
@@ -181,13 +181,13 @@ Then, you will learn how to update your model applying the changes in the databa
 	_Inside the Person controller_
 
 <a name="Ex1Task2" />
-####Task 2- Running the application ###
+####Task 2- Running the application ####
 	
 At this point, the database is not yet created. In this task, you will run the application for the first time and test the CRUD operations. The database will be created on the fly with Code First.
 	
 >**Note:** Before running the application, open global.asax and fix the database connection string (This issue is part of the MVC4 Beta Release Notes).
 >
-> 1. Open **global.asax** and add another slash (**\\**) to the connection string Data source:
+> 1. Open **global.asax.cs** and add another slash (**\\**) to the connection string Data source:
 >
 > <!-- mark:2 -->
 > ````C#
@@ -198,7 +198,7 @@ At this point, the database is not yet created. In this task, you will run the a
 
  
 >
->**Note:** If you have the **SQLEXPRESS** service running, open **Web.config** and make sure you have the following connection string in the EntityFramework section at the end of the file:
+>**Note:** If you have the **SQLEXPRESS** service running, open **Web.config** and make sure you have the following connection string in the EntityFramework section at the end of the file.
 >
 ><!-- mark:3 -->
 >````XML
@@ -219,7 +219,7 @@ At this point, the database is not yet created. In this task, you will run the a
 	_Application: first run_
 
 	
-1. You will now explore the Person pages with the CRUD operations.
+1. You will now explore the Person pages and test the CRUD operations.
 
 	1. Click **Create New** to add a new person. Enter a first name and a last name and click **Create**.
 
@@ -305,14 +305,14 @@ In this task you will update the database using Entity Framework Migrations. You
 	Add-Migration AddMiddleName
 	````
 	
-	This command will look at the data objects to figure out what has changed, and then add the commands that will modify the database accordingly.
+	This command will look for changes in the data objects, and then, it will add the necessary commands to modify the database accordingly.
 	
 	![Adding a middle name](images/PMC-adding-middle-name.png?raw=true "Adding a middle name")
 
 	_Adding a middle name_
 
 
-1. (Optional) You can execute the following command to generate a SQL script with the differential update. This will let you update the database manually (In this case it's not necessary):
+1. (Optional) You can execute the following command to generate a SQL script with the differential update. This will let you update the database manually (In this case it's not necessary), or apply the changes in other databases:
 	
 	<!-- mark:1 -->
 	````PMC
@@ -346,7 +346,7 @@ In this task you will update the database using Entity Framework Migrations. You
 
 	_Updating the controller_
 
-1. Click **Add**. Then, check the **Overwrite PersonController.cs** and the **Overwrite associated views** values and click **OK**.
+1. Click **Add**. Then, select the values **Overwrite PersonController.cs** and the **Overwrite associated views** and click **OK**.
 
 	![Adding a controller overwrite](images/adding-a-controller-overwrite.png?raw=true)
 
@@ -373,4 +373,4 @@ In this task you will update the database using Entity Framework Migrations. You
 <a name="Summary" />
 ## Summary ##
 
-In this Hands-On lab, you have learned simple steps to create CRUD operations with MVC 4 Scaffolding for any model class. Then, you have learned how to perform an end-to-end update in your application -from the database to the views- by using Entity Framework Migrations.
+In this Hands-On lab, you have learned simple steps to create CRUD operations with MVC 4 Scaffolding using any model class. Then, you have learned how to perform an end to end update in your application -from the database to the views- by using Entity Framework Migrations.

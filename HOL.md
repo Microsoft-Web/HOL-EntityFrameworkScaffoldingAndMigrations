@@ -101,7 +101,7 @@ Then, you will learn how to update your model applying the changes in the databa
 
 1. Start Microsoft Visual Studio 11 from **Start** | **All Programs** | **Microsoft Visual Studio 11 Express** | **Visual Studio 11 Express Beta for Web**.
 
-1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select the **ASP.NET MVC4** project. Name it MVC4andEFMigrations and click **OK**.
+1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select the **ASP.NET MVC4** project. Name it **MVC4andEFMigrations** and click **OK**.
 
  	![New ASP.NET MVC 4 Project Dialog Box](./images/add-new-mvc-project.png?raw=true "New ASP.NET MVC 4 Project Dialog Box")
  

@@ -2,7 +2,7 @@
 <Lab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
   <Id>ASPNETMVC4EntityFrameworkScaffoldingAndMigrations</Id>
   <Author>
-    <Name>.</Name>
+    <Name></Name>
   </Author>
   <Description>In this lab, you will learn how to use MVC 4 Scaffolding to create CRUD operations, and then, you will learn how to update the model and apply the changes in the database by using Entity Framework Migrations</Description>  
   <Document ConversionType="Html">.\HOL.md</Document>

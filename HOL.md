@@ -25,8 +25,7 @@ In this Hands-On Lab, you will learn how to:
 
 You must have the following items to complete this lab:
 
-- Visual Studio 11 Express Beta for Web
-
+- Microsoft Visual Studio 2012
 
 <a name="Setup" />
 ### Setup ###
@@ -34,48 +33,6 @@ You must have the following items to complete this lab:
 <a name="InstallingCodeSnippets" />
 #### Installing Code Snippets####
 For convenience, much of the code you will be managing along this lab is available as Visual Studio code snippets. To install the code snippets run the **.\Source\Assets\CodeSnippets.vsi** file.
-
-<a name="InstallingWebPI" />
-####Installing Web Platform Installer####
-This section assumes that you don't have some or all the system requirements installed. In case you do, you can simply skip this section.
-
-Microsoft Web Platform Installer (WebPI) is a tool that manages the installation of the prerequisites for this Lab.
-
-> **Note:** As well as the Microsoft Web Platform, WebPI can also install many of the open source applications that are available like Umbraco, Kentico, DotNetNuke and many more.  These are very useful for providing a foundation from which to customize an application to your requirements, dramatically cutting down your development time.
-
-Please follow these steps to downloads and install Microsoft Visual Studio 11 Express Beta for Web:
-
-1. Install **Visual Studio 11 Express Beta for Web**. To do this, Navigate to [http://www.microsoft.com/web/gallery/install.aspx?appid=VWD11_BETA&prerelease=true](http://www.microsoft.com/web/gallery/install.aspx?appid=VWD11_BETA&prerelease=true) using a web browser. 
-
-	![Web Platform Installer 4.0 window](./images/Microsoft-Web-Platform-Installer-4.png?raw=true "Web Platform Installer 4.0 download")
-
-	_Web Platform Installer 4.0 download_
-
-1. The Web Platform Installer launches and shows Visual Studio 11 Express Beta for Web Installation. Click on **Install**.
-
- 	![Visual Studio 11 Express Beta for Web Installer window](./images/Microsoft-VS-11-Install.png?raw=true "Visual Studio 11 Express Beta for Web Installer window")
- 
-	_Visual Studio 11 Express Beta for Web Installer window_
-
-1. The **Web Platform Installer** displays the list of software to be installed. Accept by clicking **I Accept**.
-
- 	![Web Platform Installer window](./images/Microsoft-Web-Platform-Installer-Prerequisites.png?raw=true "Web Platform Installer window")
- 
-	_Web Platform Installer window_
-
-1. The appropriate components will be downloaded and installed.
-
- 	![Web Platform Installation - Download progress](./images/Web-Platform-Installation-Download-progress.png?raw=true "Web Platform Installation - Download progress")
- 
-	_Web Platform Installation - Download progress_
-
-1. The **Web Platform Installer** will resume downloading and installing the products. When this process is finished, the Installer will show the list of all the software installed. Click **Finish**.
-
- 	![Web Platform Installer](./images/Web-Platform-Installer.png?raw=true "Web Platform Installer")
- 
-	_Web Platform Installer_
-
-1. Finally the Web Platform Installer shows the installed products. Click **Finish** to finish the setup process.
 
 ---
 
@@ -99,32 +56,21 @@ Then, you will learn how to update your model applying the changes in the databa
 <a name="Ex1Task1" />
 ####Task 1- Creating a new MVC 4 project using Scaffolding####
 
-1. Start Microsoft Visual Studio 11 from **Start** | **All Programs** | **Microsoft Visual Studio 11 Express** | **Visual Studio 11 Express Beta for Web**.
+1. If not already open, start **Visual Studio 2012**.
 
-1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select the **ASP.NET MVC4** project. Name it **MVC4andEFMigrations** and click **OK**.
+1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select **ASP.NET MVC4 Web Application**. Name the project to **MVC4andEFMigrations** and set the location to **Source\Ex01-UsingMVC4ScaffoldingEFMigrations\** folder of this lab. Set the **Solution name** to **Begin** and ensure **Create directory for solution** is checked. Click **OK**.
 
  	![New ASP.NET MVC 4 Project Dialog Box](./images/add-new-mvc-project.png?raw=true "New ASP.NET MVC 4 Project Dialog Box")
  
 	_New ASP.NET MVC 4 Project Dialog Box_
 
-1. In the **New ASP.NET MVC 4 Project** dialog box select the **Internet Application** template, and make sure that **Razor** is the selected **View engine**. Click **OK** to create the new project.
+1. In the **New ASP.NET MVC 4 Project** dialog box select the **Internet Application** template, and make sure that **Razor** is the selected **View engine**. Click **OK** to create the project.
 
 	 ![New ASP.NET MVC 4 Internet Application](./images/add-new-mvc-project-internet-app.png?raw=true "New ASP.NET MVC 4 Internet Application")
- 
+
 	_New ASP.NET MVC 4 Internet Application_
 
-1. In the Package Manager Console, write the following command to update Entity Framework to its latest version: 
-
-	<!--mark:1-->
-	````PMConsole
-	Update-Package EntityFramework
-	````
-	
-	![Updating Entity Framework](images/pmc-updating-EF.png?raw=true "Updating Entity Framework")
-
-	_Updating Entity Framework_
-
-1. In the Solution Explorer, right-click **Models** and select **Add | Class** to create a simple class person (POCO). Name it _Person_ and click **OK**.
+1. In the Solution Explorer, right-click **Models** and select **Add | Class** to create a simple class person (POCO). Name it **Person** and click **OK**.
 
 1. Open the Person class and insert the following three attributes.
 
@@ -150,7 +96,7 @@ Then, you will learn how to update your model applying the changes in the databa
 	}
 	````
 
-1. Click **Debug | Build** to save the changes and build the project.
+1. Click **Build | Build Solution** to save the changes and build the project.
 
 	![Building the application](images/visual-studio-build-application.png?raw=true "Building the application")
 
@@ -159,7 +105,7 @@ Then, you will learn how to update your model applying the changes in the databa
 1. In the Solution Explorer, right-click the controllers folder and select **Add | Controller**. 
 
 1. Name the controller _PersonController_ and complete the **Scaffolding options** with the following values.	
-	- In the **Template** drop-down list, select the **Controller with read/write actions and views, using Entity Framework** option.
+	- In the **Template** drop-down list, select the **MVC controller with read/write actions and views, using Entity Framework** option.
 	- In the **Model class** drop-down list, select the **Person** class.
 	- In the **Data Context class** list, select **\<New data context...\>**. Choose any name and click **OK**.
 	- In the **Views** drop-down list, make sure that **Razor** is selected.
@@ -184,20 +130,7 @@ Then, you will learn how to update your model applying the changes in the databa
 ####Task 2- Running the application ####
 	
 At this point, the database is not yet created. In this task, you will run the application for the first time and test the CRUD operations. The database will be created on the fly with Code First.
-	
->**Note:** Before running the application, open global.asax and fix the database connection string (This issue is part of the MVC4 Beta Release Notes).
->
-> 1. Open **global.asax.cs** and add another slash (**\\**) to the connection string Data source:
->
-> <!-- mark:2 -->
-> ````C#
-> Database.DefaultConnectionFactory = 
->new SqlConnectionFactory("Data Source=(localdb)\\v11.0; Integrated Security=True;
->MultipleActiveResultSets=True");
->````
 
- 
->
 >**Note:** If you have the **SQLEXPRESS** service running, open **Web.config** and make sure you have the following connection string in the EntityFramework section at the end of the file.
 >
 ><!-- mark:3 -->
@@ -208,7 +141,6 @@ At this point, the database is not yet created. In this task, you will run the a
 >..
 ></entityFramework>
 >````
-
 
 1. Press **F5** to run the application.
 
@@ -239,17 +171,18 @@ At this point, the database is not yet created. In this task, you will run the a
 
 		_Person list_
 
-	
 1. Close the browser and return to Visual Studio.
-Notice that you have created the whole CRUD for the person entity throughout your application- from the model to the views - without having to write a single line of code!.
+Notice that you have created the whole CRUD for the person entity throughout your application -from the model to the views- without having to write a single line of code!
 
 <a name="Ex1Task3" />
 ####Task 3- Updating the database using Entity Framework Migrations#
 
 In this task you will update the database using Entity Framework Migrations. You will discover how easy it is to change the model and reflect the changes in your databases by using the Entity Framework Migrations feature.
 
+1. Open the Package Manager Console. Select **Tools | Library Package Manager | Package Manager Console**.
+
 1. In the Package Manager Console, enter the following command:
-	
+
 	<!-- mark:1 -->
 	````PMC
 	Enable-Migrations
@@ -264,7 +197,6 @@ In this task you will update the database using Entity Framework Migrations. You
 	![Migrations folder](images/migrations-folder.png?raw=true "Migrations folder")
 
 	_Migrations folder_
-	
 
 1. Open the **Configuration.cs** file in the Migrations folder. Locate the class constructor and change the **AutomaticMigrationsEnabled** value to _true_.
 
@@ -292,9 +224,9 @@ In this task you will update the database using Entity Framework Migrations. You
 	}
 	````
 
-1. Select **Debug | Build** on the menu to build the application.
+1. Select **Build | Build Solution** on the menu to build the application.
 
-	![Building the application](images/visual-studio-build-application.png?raw=true "Building the application")
+	![Building the application](images/visual-studio-build-application2.png?raw=true "Building the application")
 
 	_Building the application_
 
@@ -306,21 +238,20 @@ In this task you will update the database using Entity Framework Migrations. You
 	````
 	
 	This command will look for changes in the data objects, and then, it will add the necessary commands to modify the database accordingly.
-	
+
 	![Adding a middle name](images/PMC-adding-middle-name.png?raw=true "Adding a middle name")
 
 	_Adding a middle name_
 
+1. (Optional) You can run the following command to generate a SQL script with the differential update. This will let you update the database manually (In this case it's not necessary), or apply the changes in other databases:
 
-1. (Optional) You can execute the following command to generate a SQL script with the differential update. This will let you update the database manually (In this case it's not necessary), or apply the changes in other databases:
-	
 	<!-- mark:1 -->
 	````PMC
 	Update-Database -Script -SourceMigration:$InitialDatabase
 	````
-	
+
 	![Generating a SQL script](images/PMC-generating-a-sql-script.png?raw=true "Generating a SQL script")
-	
+
 	_Generating a SQL script_
 
 	![SQL Script update](images/sql-script-update.png?raw=true "SQL Script update")
@@ -328,7 +259,7 @@ In this task you will update the database using Entity Framework Migrations. You
 	_SQL Script update_
 
 1. In the Package Manager Console, enter the following command to update the database:
-	
+
 	<!-- mark:1 -->
 	````PMC
 	Update-Database -Verbose
@@ -339,7 +270,7 @@ In this task you will update the database using Entity Framework Migrations. You
 	_Updating the Database_
 
 	This will add the **MiddleName** column in the **People** table to match the current definition of the **Person** class.
-	
+
 1. Once the database is updated, right-click the Controller folder and select **Add | Controller** to add the Person controller again (Complete with the same values). This will update the existing methods and views adding the new attribute.
 
 	![Adding a controller update](images/adding-a-controller-update.png?raw=true "Adding a controller update")

@@ -4,9 +4,9 @@
 
 ### Introduction ###
 
-Hands-On Labs are sets of step-by-step guides that are designed to help you learn ASP.NET MVC 4.  Each Lab provides instructions to guide you through the process of developing a complete application.
+These Hands-On Labs are sets of step-by-step guides that are designed to help you learn Visual Studio 2012, ASP.NET 4.5 WebForms and ASP.NET MVC 4. Each Lab provides instructions to guide you through the process of developing a Web application.
 
-This Hands-On Lab is based on the ASP.NET MVC 4 template, explaining step-by-step how to use ASP.NET MVC 4 with Entity Framework Migrations. 
+In this lab you will learn how to use the ASP.NET MVC 4 scaffolding to automatically generate the baseline of your application's CRUD (Create, Read, Update and Delete). In addition, you will learn how easy it is to use Entity Framework Migrations to perform model updates throughout your entire application.
 
 ### Repository Structure ###
 

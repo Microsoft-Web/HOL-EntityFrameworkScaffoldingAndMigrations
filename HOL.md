@@ -1,16 +1,16 @@
 ﻿<a name="HOLTop" />
-# ASP.NET MVC 4 Entity Framework Scaffolding and Migrations #
 
+# ASP.NET MVC 4 Entity Framework Scaffolding and Migrations #
 ---
 
 <a name="Overview" />
 ## Overview ##
 
-If you are familiar with MVC4 controller methods, or have completed the "Helpers, Forms and Validation" Hands-On lab, you should be aware that many of the logic to create, update, list and remove any data entity it is repeated among the application. Not to mention that, if your model has several classes to manipulate, you will be likely to spend a considerable time writing the POST and GET action methods for each entity operation, as well as each of the views.
+If you are familiar with ASP.NET MVC 4 controller methods, or have completed the "Helpers, Forms and Validation" Hands-On lab, you should be aware that many of the logic to create, update, list and remove any data entity it is repeated among the application. Not to mention that, if your model has several classes to manipulate, you will be likely to spend a considerable time writing the POST and GET action methods for each entity operation, as well as each of the views.
 
 In this lab you will learn how to use the ASP.NET MVC 4 scaffolding to automatically generate the baseline of your application's CRUD (Create, Read, Update and Delete). Starting from a simple model class, and, without writing a single line of code, you will create a controller that will contain all the CRUD operations, as well as the all the necessary views. After building and running the simple solution, you will have the application database generated, together with the MVC logic and views for data manipulation.
 
-In addition, you will learn how easy it is to use Entity Framework Migrations to perform model updates throughout your entire application. Entity Framework Migrations will let you modify your database after the model has changed with simple steps. With all these in mind, you will be able to build and maintain web applications more efficiently, taking advantage of the latest features of MVC4.
+In addition, you will learn how easy it is to use Entity Framework Migrations to perform model updates throughout your entire application. Entity Framework Migrations will let you modify your database after the model has changed with simple steps. With all these in mind, you will be able to build and maintain web applications more efficiently, taking advantage of the latest features of ASP.NET MVC 4.
 
 <a name="Objectives" />
 ### Objectives ###
@@ -20,16 +20,21 @@ In this Hands-On Lab, you will learn how to:
 - Use ASP.NET scaffolding for CRUD operations in controllers.
 - Change the database model using Entity Framework Migrations.
 
-<a name="SystemRequirements" />
-### System Requirements ###
+<a name="Prerequisites" />
+### Prerequisites ###
 
 You must have the following items to complete this lab:
 
 - [Microsoft Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web) or superior (read [Appendix A](#AppendixA) for instructions on how to install it).
 
-### Installing Code Snippets ###
+<a name="Setup" /> 
+### Setup ###
 
-For convenience, much of the code you will be managing along this lab is available as Visual Studio code snippets. To install the code snippets run **.\Source\Setup\CodeSnippets.vsi** file.
+**Installing Code Snippets**
+
+For convenience, much of the code you will be managing along this lab is available as Visual Studio code snippets. To install the code snippets run **.\Source\Assets\CodeSnippets.vsi** file.
+
+If you are not familiar with the Visual Studio Code Snippets, and want to learn how to use them, you can refer to the appendix from this document "[Appendix C: Using Code Snippets](#AppendixC)".
 
 ---
 
@@ -39,6 +44,7 @@ The following exercises make up this Hands-On Lab:
 
 1. [Using MVC 4 Scaffolding with Entity Framework Migrations](#Exercise1)
 
+> **Note:** This exercise is accompanied by an **End** folder containing the resulting solution you should obtain after completing the exercise. You can use this solution as a guide if you need additional help working through the exercise.
 
 Estimated time to complete this lab: **30 minutes**
 
@@ -55,7 +61,7 @@ Then, you will learn how to update your model applying the changes in the databa
 
 1. If not already open, start **Visual Studio 2012**.
 
-1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select **ASP.NET MVC4 Web Application**. Name the project to **MVC4andEFMigrations** and set the location to **Source\Ex1-UsingMVC4ScaffoldingEFMigrations\** folder of this lab. Set the **Solution name** to **Begin** and ensure **Create directory for solution** is checked. Click **OK**.
+1. Select **File | New Project**. In the New Project dialog, under the **Visual C# | Web** section, select **ASP.NET MVC 4 Web Application**. Name the project to **MVC4andEFMigrations** and set the location to **Source\Ex1-UsingMVC4ScaffoldingEFMigrations\** folder of this lab. Set the **Solution name** to **Begin** and ensure **Create directory for solution** is checked. Click **OK**.
 
  	![New ASP.NET MVC 4 Project Dialog Box](./images/add-new-mvc-project.png?raw=true "New ASP.NET MVC 4 Project Dialog Box")
  
@@ -71,7 +77,7 @@ Then, you will learn how to update your model applying the changes in the databa
 
 1. Open the Person class and insert the following properties.
 
-	(Code Snippet - _ASP.NET MVC4 and Entity Framework Migrations - Ex1 Person Properties_)
+	(Code Snippet - _ASP.NET MVC 4 and Entity Framework Migrations - Ex1 Person Properties_)
 	
 	<!-- mark:10-14 -->
 	````C#
@@ -284,6 +290,9 @@ In this task you will update the database using Entity Framework Migrations. You
 1. If you click **Edit**, you will be able to add a middle name to the current person.
 
 	![Middle Name edition](images/middle-name-edition.png?raw=true "Middle Name edition")
+
+	
+>**Note:** Additionally, you can deploy this application to Windows Azure Web Sites following [Appendix B: Publishing an ASP.NET MVC 4 Application using Web Deploy](#AppendixB).
 
 ---
 

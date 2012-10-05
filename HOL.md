@@ -42,14 +42,14 @@ If you are not familiar with the Visual Studio Code Snippets, and want to learn 
 ## Exercises ##
 The following exercises make up this Hands-On Lab:
 
-1. [Using MVC 4 Scaffolding with Entity Framework Migrations](#Exercise1)
+1. [Using ASP.NET MVC 4 Scaffolding with Entity Framework Migrations](#Exercise1)
 
 > **Note:** This exercise is accompanied by an **End** folder containing the resulting solution you should obtain after completing the exercise. You can use this solution as a guide if you need additional help working through the exercise.
 
 Estimated time to complete this lab: **30 minutes**
 
 <a name="Exercise1" />
-### Exercise 1: Using MVC 4 Scaffolding with Entity Framework Migrations###
+### Exercise 1: Using ASP.NET MVC 4 Scaffolding with Entity Framework Migrations###
 
 ASP.NET MVC scaffolding provides a quick way to generate the CRUD operations in a standardized way, creating the necessary logic that lets your application interact with the database layer.
 
@@ -57,7 +57,7 @@ In this exercise, you will learn how to use MVC 4 scaffolding with code first to
 Then, you will learn how to update your model applying the changes in the database by using Entity Framework Migrations.
 
 <a name="Ex1Task1" />
-####Task 1- Creating a new MVC 4 project using Scaffolding####
+####Task 1- Creating a new ASP.NET MVC 4 project using Scaffolding####
 
 1. If not already open, start **Visual Studio 2012**.
 
@@ -299,7 +299,7 @@ In this task you will update the database using Entity Framework Migrations. You
 <a name="Summary" />
 ## Summary ##
 
-In this Hands-On lab, you have learned simple steps to create CRUD operations with MVC 4 Scaffolding using any model class. Then, you have learned how to perform an end to end update in your application -from the database to the views- by using Entity Framework Migrations.
+In this Hands-On lab, you have learned simple steps to create CRUD operations with ASP.NET MVC 4 Scaffolding using any model class. Then, you have learned how to perform an end to end update in your application -from the database to the views- by using Entity Framework Migrations.
 
 
 <a name="AppendixA" />

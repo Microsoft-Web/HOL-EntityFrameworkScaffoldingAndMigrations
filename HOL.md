@@ -40,7 +40,7 @@ If you are not familiar with the Visual Studio Code Snippets, and want to learn 
 
 <a name="Exercises" />
 ## Exercises ##
-The following exercises make up this Hands-On Lab:
+The following exercise make up this Hands-On Lab:
 
 1. [Using ASP.NET MVC 4 Scaffolding with Entity Framework Migrations](#Exercise1)
 
@@ -53,7 +53,7 @@ Estimated time to complete this lab: **30 minutes**
 
 ASP.NET MVC scaffolding provides a quick way to generate the CRUD operations in a standardized way, creating the necessary logic that lets your application interact with the database layer.
 
-In this exercise, you will learn how to use MVC 4 scaffolding with code first to create the CRUD methods. 
+In this exercise, you will learn how to use ASP.NET MVC 4 scaffolding with code first to create the CRUD methods. 
 Then, you will learn how to update your model applying the changes in the database by using Entity Framework Migrations.
 
 <a name="Ex1Task1" />
@@ -108,10 +108,10 @@ Then, you will learn how to update your model applying the changes in the databa
 1. In the Solution Explorer, right-click the controllers folder and select **Add | Controller**. 
 
 1. Name the controller _PersonController_ and complete the **Scaffolding options** with the following values.	
-	- In the **Template** drop-down list, select the **MVC controller with read/write actions and views, using Entity Framework** option.
-	- In the **Model class** drop-down list, select the **Person** class.
-	- In the **Data Context class** list, select **\<New data context...\>**. Choose any name and click **OK**.
-	- In the **Views** drop-down list, make sure that **Razor** is selected.
+	1. In the **Template** drop-down list, select the **MVC controller with read/write actions and views, using Entity Framework** option.
+	1. In the **Model class** drop-down list, select the **Person** class.
+	1. In the **Data Context class** list, select **\<New data context...\>**. Choose any name and click **OK**.
+	1. In the **Views** drop-down list, make sure that **Razor** is selected.
 
 	![Adding the Person controller with scaffolding](images/add-person-controller.png?raw=true "Adding the Person controller with scaffolding")
 
